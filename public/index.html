@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Beluga</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="tetris.js"></script>
+
+    <!-- For Webclip -->
+    <link rel="apple-touch-icon" href="binarybeluga.png"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+  </head>
+  <body>
+    <div class="menu" id="menu">
+      <div class="spacer"></div>
+      <img class="binaryBelugaImage" src="binarybeluga.png" alt="">
+      <h1>Binary Beluga</h1>
+      <h2 id="startButton">start</h2>
+      <h3 id='scoreLabel'>Score: 0</h3>
+    </div>
+
+    <div class="pauseButton" id="pauseButton">
+      <img class="pauseImage" src="pause.png" alt="||">
+    </div>
+
+    <div class="pauseScreen" id="pauseScreen">
+      <div class="spacer"></div>
+      <img class="binaryBelugaImage" src="binarybeluga.png" alt="">
+      <h1>Binary Beluga</h1>
+      <h3>Paused</h3>
+      <h3 id='pauseScoreLabel'>Score: </h3>
+      <h2 id='quitButton'>Quit</h2>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/6.0.4/firebase-app.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
